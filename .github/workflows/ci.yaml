@@ -34,7 +34,7 @@ jobs:
         run: npm run build:firefox
       
       - name: Archive Chrome artifacts
-        uses: actions/upload-artifact@v4¨
+        uses: actions/upload-artifact@v4
         with:
           name: chromium
           path: ./output/chromium-mv3
