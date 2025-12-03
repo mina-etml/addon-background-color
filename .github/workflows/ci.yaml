@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v6
 
       - name: Install dependencies
-        run: npm run ci
+        run: npm ci
       
       - name: Run Linter
         run: npm run lint:check
