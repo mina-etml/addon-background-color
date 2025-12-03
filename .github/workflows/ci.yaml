@@ -40,7 +40,7 @@ jobs:
           path: ./output/chromium-mv3
       
       - name: Archive Firefox artifacts
-        uses: actions/upload-artifact@v4¨
+        uses: actions/upload-artifact@v4
         with:
           name: firefox
           path: ./output/firefox-mv2-dev
