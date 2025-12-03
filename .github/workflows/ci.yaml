@@ -27,11 +27,23 @@ jobs:
       - name: Run audit
         run: npm audit
       
-      - name: Build project
+      - name: Build Chrome project
         run: npm run build
       
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v4
+      - name: Build Firefox project
+        run: npm run build:firefox
+      
+      - name: Archive Chrome artifacts
+        uses: actions/upload-artifact@v4¨
+        with:
+          name: chromium
+          path: ./output/chromium-mv3
+      
+      - name: Archive Firefox artifacts
+        uses: actions/upload-artifact@v4¨
+        with:
+          name: firefox
+          path: ./output/firefox-mv2-dev
 
 
 
